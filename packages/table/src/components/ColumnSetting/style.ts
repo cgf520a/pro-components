@@ -17,7 +17,7 @@ const genProStyle: GenerateStyle<ProToken> = (token) => {
       },
       '&-overlay': {
         [`${token.antCls}-popover-inner-content`]: {
-          width: '200px',
+          minWidth: '200px',
           paddingBlock: 0,
           paddingInline: 0,
           paddingBlockEnd: 8,
@@ -68,7 +68,6 @@ const genProStyle: GenerateStyle<ProToken> = (token) => {
         justifyContent: 'space-between',
         '&-title': {
           flex: 1,
-          maxWidth: 80,
         },
         '&-option': {
           display: 'none',
